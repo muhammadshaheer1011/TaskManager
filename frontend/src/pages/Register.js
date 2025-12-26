@@ -17,7 +17,7 @@ export default function Register() {
     };
 
     try {
-      await api.post('/api/auth/register', payload);
+      await api.post('/auth/register', payload);
       // Redirect to login page after successful registration
       window.location.href = '/'; 
     } catch (err) {
