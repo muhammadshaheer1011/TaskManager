@@ -11,7 +11,7 @@ export default function Login() {
     setError('');
 
     try {
-      const { data } = await api.post('/auth/login', {
+      const { data } = await api.post('/api/auth/login', {
         email: e.target.email.value,
         password: e.target.password.value,
       });
